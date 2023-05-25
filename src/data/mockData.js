@@ -411,7 +411,7 @@ export const mockDataInvoices = [
 
 export const mockTransactions = [
   {
-    txId: "01e4dsa",
+    txId: "01e4ds",
     user: "johndoe",
     date: "2021-09-01",
     cost: "43.95",
@@ -435,7 +435,7 @@ export const mockTransactions = [
     cost: "200.95",
   },
   {
-    txId: "0a123sb",
+    txId: "0a123s",
     user: "stevebower",
     date: "2022-11-02",
     cost: "13.55",

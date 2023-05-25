@@ -23,22 +23,22 @@ const Dashboard = () => {
     <Box m="20px">
       {/* HEADER */}
       <Box display="flex" justifyContent="space-between" alignItems="center">
-        <Header title="ReactBOARD" subtitle="Welcome to this dashboard made with js and react" />
+        <Header title="深度學習模型新式攻防研究" subtitle="NTPUNSL" />
 
-        <Box>
-          <Button
-            sx={{
-              backgroundColor: colors.blueAccent[700],
-              color: colors.grey[100],
-              fontSize: "14px",
-              fontWeight: "bold",
-              padding: "10px 20px",
-            }}
-          >
-            <DownloadOutlinedIcon sx={{ mr: "10px" }} />
-            Download Reports
-          </Button>
-        </Box>
+        {/*<Box>*/}
+        {/*  <Button*/}
+        {/*    sx={{*/}
+        {/*      backgroundColor: colors.blueAccent[700],*/}
+        {/*      color: colors.grey[100],*/}
+        {/*      fontSize: "14px",*/}
+        {/*      fontWeight: "bold",*/}
+        {/*      padding: "10px 20px",*/}
+        {/*    }}*/}
+        {/*  >*/}
+        {/*    <DownloadOutlinedIcon sx={{ mr: "10px" }} />*/}
+        {/*    Download Reports*/}
+        {/*  </Button>*/}
+        {/*</Box>*/}
       </Box>
 
       {/* GRID & CHARTS */}
@@ -49,82 +49,82 @@ const Dashboard = () => {
         gap="20px"
       >
         {/* ROW 1 */}
-        <Box
-          gridColumn="span 3"
-          backgroundColor={colors.primary[400]}
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-        >
-          <StatBox
-            title="12,361"
-            subtitle="Emails Sent"
-            progress="0.75"
-            increase="+14%"
-            icon={
-              <EmailIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
-              />
-            }
-          />
-        </Box>
-        <Box
-          gridColumn="span 3"
-          backgroundColor={colors.primary[400]}
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-        >
-          <StatBox
-            title="431,225"
-            subtitle="Sales Obtained"
-            progress="0.50"
-            increase="+21%"
-            icon={
-              <PointOfSaleIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
-              />
-            }
-          />
-        </Box>
-        <Box
-          gridColumn="span 3"
-          backgroundColor={colors.primary[400]}
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-        >
-          <StatBox
-            title="32,441"
-            subtitle="New Clients"
-            progress="0.30"
-            increase="+5%"
-            icon={
-              <PersonAddIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
-              />
-            }
-          />
-        </Box>
-        <Box
-          gridColumn="span 3"
-          backgroundColor={colors.primary[400]}
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-        >
-          <StatBox
-            title="1,325,134"
-            subtitle="Traffic Received"
-            progress="0.80"
-            increase="+43%"
-            icon={
-              <TrafficIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
-              />
-            }
-          />
-        </Box>
+        {/*<Box*/}
+        {/*  gridColumn="span 3"*/}
+        {/*  backgroundColor={colors.primary[400]}*/}
+        {/*  display="flex"*/}
+        {/*  alignItems="center"*/}
+        {/*  justifyContent="center"*/}
+        {/*>*/}
+        {/*  <StatBox*/}
+        {/*    title="12,361"*/}
+        {/*    subtitle="Emails Sent"*/}
+        {/*    progress="0.75"*/}
+        {/*    increase="+14%"*/}
+        {/*    icon={*/}
+        {/*      <EmailIcon*/}
+        {/*        sx={{ color: colors.greenAccent[600], fontSize: "26px" }}*/}
+        {/*      />*/}
+        {/*    }*/}
+        {/*  />*/}
+        {/*</Box>*/}
+        {/*<Box*/}
+        {/*  gridColumn="span 3"*/}
+        {/*  backgroundColor={colors.primary[400]}*/}
+        {/*  display="flex"*/}
+        {/*  alignItems="center"*/}
+        {/*  justifyContent="center"*/}
+        {/*>*/}
+        {/*  <StatBox*/}
+        {/*    title="431,225"*/}
+        {/*    subtitle="Sales Obtained"*/}
+        {/*    progress="0.50"*/}
+        {/*    increase="+21%"*/}
+        {/*    icon={*/}
+        {/*      <PointOfSaleIcon*/}
+        {/*        sx={{ color: colors.greenAccent[600], fontSize: "26px" }}*/}
+        {/*      />*/}
+        {/*    }*/}
+        {/*  />*/}
+        {/*</Box>*/}
+        {/*<Box*/}
+        {/*  gridColumn="span 3"*/}
+        {/*  backgroundColor={colors.primary[400]}*/}
+        {/*  display="flex"*/}
+        {/*  alignItems="center"*/}
+        {/*  justifyContent="center"*/}
+        {/*>*/}
+        {/*  <StatBox*/}
+        {/*    title="32,441"*/}
+        {/*    subtitle="New Clients"*/}
+        {/*    progress="0.30"*/}
+        {/*    increase="+5%"*/}
+        {/*    icon={*/}
+        {/*      <PersonAddIcon*/}
+        {/*        sx={{ color: colors.greenAccent[600], fontSize: "26px" }}*/}
+        {/*      />*/}
+        {/*    }*/}
+        {/*  />*/}
+        {/*</Box>*/}
+        {/*<Box*/}
+        {/*  gridColumn="span 3"*/}
+        {/*  backgroundColor={colors.primary[400]}*/}
+        {/*  display="flex"*/}
+        {/*  alignItems="center"*/}
+        {/*  justifyContent="center"*/}
+        {/*>*/}
+        {/*  <StatBox*/}
+        {/*    title="1,325,134"*/}
+        {/*    subtitle="Traffic Received"*/}
+        {/*    progress="0.80"*/}
+        {/*    increase="+43%"*/}
+        {/*    icon={*/}
+        {/*      <TrafficIcon*/}
+        {/*        sx={{ color: colors.greenAccent[600], fontSize: "26px" }}*/}
+        {/*      />*/}
+        {/*    }*/}
+        {/*  />*/}
+        {/*</Box>*/}
 
         {/* ROW 2 */}
         <Box
@@ -155,13 +155,13 @@ const Dashboard = () => {
                 $59,342.32
               </Typography>
             </Box>
-            <Box>
-              <IconButton>
-                <DownloadOutlinedIcon
-                  sx={{ fontSize: "26px", color: colors.greenAccent[500] }}
-                />
-              </IconButton>
-            </Box>
+            {/*<Box>*/}
+            {/*  <IconButton>*/}
+            {/*    <DownloadOutlinedIcon*/}
+            {/*      sx={{ fontSize: "26px", color: colors.greenAccent[500] }}*/}
+            {/*    />*/}
+            {/*  </IconButton>*/}
+            {/*</Box>*/}
           </Box>
           <Box height="230px" m="-20px 0 0 0">
             <BarChart isDashboard={true} />
