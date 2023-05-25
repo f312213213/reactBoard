@@ -57,7 +57,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
