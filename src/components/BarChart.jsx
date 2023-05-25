@@ -117,7 +117,6 @@ const data = [
 ]
 
 export default class Example extends PureComponent {
-  static demoUrl = 'https://codesandbox.io/s/bar-chart-with-brush-ghsz3';
 
   render() {
     return (
@@ -139,7 +138,7 @@ export default class Example extends PureComponent {
           <Tooltip />
           <Legend verticalAlign="top" wrapperStyle={{ lineHeight: '40px' }} />
           <ReferenceLine y={0} stroke="#000" />
-          <Brush dataKey="name" height={30} stroke="#8884d8" />
+          <Brush dataKey="eps" height={30} stroke="#8884d8" startIndex={20} endIndex={40} />
           <Bar dataKey="acc" fill="#8884d8" />
           <Bar dataKey="accCT" fill="#82ca9d" />
         </BarChart>
