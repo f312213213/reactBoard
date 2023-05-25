@@ -1,23 +1,23 @@
 import React from 'react';
 import { Box } from "@mui/material";
-import Team from "./scenes/team";
+// import Team from "./scenes/team";
 import { useState } from "react";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ColorModeContext, useMode } from "./theme";
 import { Routes, Route } from "react-router-dom";
-import Topbar from "./scenes/global/Topbar";
+// import Topbar from "./scenes/global/Topbar";
 import Dashboard from "./scenes/dashboard";
-import Contacts from "./scenes/contacts";
-import Sidebar from "./scenes/global/Sidebar";
-import Invoices from "./scenes/invoices";
-import Form from "./scenes/form";
-import Calendar from "./scenes/calendar";
-import FAQ from "./scenes/faq";
-import Bar from "./scenes/bar";
-import Pie from "./scenes/Pie";
-import Line from "./scenes/line";
-import Geography from "./scenes/geography";
-import Main from "./scenes/main";
+// import Contacts from "./scenes/contacts";
+// import Sidebar from "./scenes/global/Sidebar";
+// import Invoices from "./scenes/invoices";
+// import Form from "./scenes/form";
+// // import Calendar from "./scenes/calendar";
+// import FAQ from "./scenes/faq";
+// import Bar from "./scenes/bar";
+// import Pie from "./scenes/Pie";
+// import Line from "./scenes/line";
+// import Geography from "./scenes/geography";
+// import Main from "./scenes/main";
 
 
 
