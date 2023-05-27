@@ -718,7 +718,7 @@ const IOT23DNNDashboard = () => {
       <Box m="20px">
         {/* HEADER */}
         <Box display="flex" justifyContent="space-between" alignItems="center">
-          <Header title="NB15 DNN 2分類" subtitle="NTPUNSL" />
+          <Header title="IOT23 DNN 2分類" subtitle="NTPUNSL" />
         </Box>
 
         {/* GRID & CHARTS */}
