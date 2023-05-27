@@ -419,23 +419,6 @@ const IOT23FGSMDashboard = () => {
           </Box>
         </Box>
 
-        <Box
-            gridColumn="span 4"
-            gridRow="span 2"
-            backgroundColor={colors.primary[400]}
-            padding="30px"
-        >
-          <Typography
-              variant="h5"
-              fontWeight="600"
-              sx={{ marginBottom: "15px" }}
-          >
-            EPS 值變化時，準確度的變化紀錄（有 ACT）
-          </Typography>
-          <Box height="240px">
-            <MainChart isDashboard={true} data={data} dataKey={'eps'} bar2={'accCT'} />
-          </Box>
-        </Box>
 
         <Box
             gridColumn="span 4"
@@ -452,6 +435,25 @@ const IOT23FGSMDashboard = () => {
           </Typography>
           <Box height="240px">
             <MainChart isDashboard={true} data={data} dataKey={'eps'} bar1={'acc'}  />
+          </Box>
+        </Box>
+
+
+        <Box
+            gridColumn="span 4"
+            gridRow="span 2"
+            backgroundColor={colors.primary[400]}
+            padding="30px"
+        >
+          <Typography
+              variant="h5"
+              fontWeight="600"
+              sx={{ marginBottom: "15px" }}
+          >
+            EPS 值變化時，準確度的變化紀錄（有 ACT）
+          </Typography>
+          <Box height="240px">
+            <MainChart isDashboard={true} data={data} dataKey={'eps'} bar2={'accCT'} />
           </Box>
         </Box>
       </Box>
@@ -618,13 +620,12 @@ const IOT23FGSMDashboard = () => {
               fontWeight="600"
               sx={{ marginBottom: "15px" }}
           >
-            EPS 值變化時，準確度的變化紀錄（有 ACT）
+            EPS 值變化時，準確度的變化紀錄（無 ACT）
           </Typography>
           <Box height="240px">
-            <MainChart isDashboard={true} data={data100} dataKey={'eps'} bar2={'accCT'} />
+            <MainChart isDashboard={true} data={data100} dataKey={'eps'} bar1={'acc'}  />
           </Box>
         </Box>
-
         <Box
             gridColumn="span 4"
             gridRow="span 2"
@@ -636,12 +637,13 @@ const IOT23FGSMDashboard = () => {
               fontWeight="600"
               sx={{ marginBottom: "15px" }}
           >
-            EPS 值變化時，準確度的變化紀錄（無 ACT）
+            EPS 值變化時，準確度的變化紀錄（有 ACT）
           </Typography>
           <Box height="240px">
-            <MainChart isDashboard={true} data={data100} dataKey={'eps'} bar1={'acc'}  />
+            <MainChart isDashboard={true} data={data100} dataKey={'eps'} bar2={'accCT'} />
           </Box>
         </Box>
+
       </Box>
     </Box>
   );

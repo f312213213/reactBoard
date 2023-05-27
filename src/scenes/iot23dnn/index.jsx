@@ -949,6 +949,7 @@ const IOT23DNNDashboard = () => {
             </Box>
           </Box>
         </Box>
+
         <Typography variant="h3">
           訓練資料紀錄 - Loss
         </Typography>
@@ -1101,6 +1102,7 @@ const IOT23DNNDashboard = () => {
             </Box>
           </Box>
 
+
           <Box
               gridColumn="span 4"
               gridRow="span 2"
@@ -1118,6 +1120,7 @@ const IOT23DNNDashboard = () => {
               <MainChart isDashboard={true} data={data} dataKey={'epoch'} bar1={'loss'} />
             </Box>
           </Box>
+
           <Box
               gridColumn="span 4"
               gridRow="span 2"

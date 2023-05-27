@@ -34,8 +34,8 @@ const Chart = ({ data, dataKey, bar1, bar2 }) => {
           <Legend verticalAlign="top" wrapperStyle={{ lineHeight: '40px' }} />
           <ReferenceLine y={0} stroke="#000" />
           <Brush dataKey={dataKey} height={30} stroke="#8884d8" startIndex={20} endIndex={40} />
-          <Bar dataKey={bar1} fill="#8884d8" />
           <Bar dataKey={bar2} fill="#82ca9d" />
+          <Bar dataKey={bar1} fill="#8884d8" />
         </BarChart>
       </ResponsiveContainer>
   )
