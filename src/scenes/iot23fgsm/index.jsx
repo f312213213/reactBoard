@@ -550,7 +550,7 @@ const IOT23FGSMDashboard = () => {
               </Typography>
             </Box>
           </Box>
-          {data.map(({eps, acc, accCT}) => (
+          {data100.map(({eps, acc, accCT}) => (
               <Box
                   key={eps}
                   display="flex"
@@ -603,7 +603,7 @@ const IOT23FGSMDashboard = () => {
             在相同 EPS 值下，是否有 ACT 值對準確度的影響
           </Typography>
           <Box height="240px">
-            <MainChart isDashboard={true} data={data} dataKey={'eps'} bar1={'acc'} bar2={'accCT'} />
+            <MainChart isDashboard={true} data={data100} dataKey={'eps'} bar1={'acc'} bar2={'accCT'} />
           </Box>
         </Box>
 
@@ -621,7 +621,7 @@ const IOT23FGSMDashboard = () => {
             EPS 值變化時，準確度的變化紀錄（有 ACT）
           </Typography>
           <Box height="240px">
-            <MainChart isDashboard={true} data={data} dataKey={'eps'} bar2={'accCT'} />
+            <MainChart isDashboard={true} data={data100} dataKey={'eps'} bar2={'accCT'} />
           </Box>
         </Box>
 
