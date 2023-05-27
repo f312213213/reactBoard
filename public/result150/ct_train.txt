@@ -1,0 +1,1 @@
+Epoch: 150/150 Acc=0.997050 Loss=0.002911 Best Epoch=150 Best Acc=0.997050

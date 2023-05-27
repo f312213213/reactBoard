@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Brush } from 'recharts';
 
 const data = [
   { eps: '0.000', acc: 0.917586, accCT: 0.998012 },
@@ -124,32 +124,36 @@ const CustomizedDot = (props) => {
   );
 };
 
-export default class Example extends PureComponent {
-  static demoUrl = 'https://codesandbox.io/s/line-chart-with-customized-dot-7on4t';
-
-  render() {
-    return (
+const Chart = ({data, dataKey, bar1, bar2}) => {
+  return (
       <ResponsiveContainer width="100%" height="100%">
         <LineChart
-          width={500}
-          height={300}
-          data={data}
-          margin={{
-            top: 5,
-            right: 30,
-            left: 20,
-            bottom: 5,
-          }}
+            width={500}
+            height={300}
+            data={data}
+            margin={{
+              top: 5,
+              right: 30,
+              left: 20,
+              bottom: 5,
+            }}
         >
           <CartesianGrid strokeDasharray="4 4" />
-          <XAxis dataKey="eps" />
-          <YAxis />
+          <XAxis dataKey={dataKey} />
+          <YAxis type="number" domain={['auto', 'auto']} />
           <Tooltip />
           <Legend />
-          <Line type="monotone" dataKey="acc" stroke="#82ca9d" dot={<></>} />
-          <Line type="monotone" dataKey="accCT" stroke="#8884d8" dot={<></>} />
+          {
+            bar1 && <Line type="monotone" dataKey={bar1} stroke="#82ca9d" dot={<></>} />
+          }
+
+          {
+            bar2 && <Line type="monotone" dataKey={bar2} stroke="#8884d8" dot={<></>} />
+          }
+          <Brush />
         </LineChart>
       </ResponsiveContainer>
-    );
-  }
+  );
 }
+
+export default Chart

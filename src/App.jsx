@@ -1,23 +1,16 @@
 import React from 'react';
-import { Box } from "@mui/material";
-// import Team from "./scenes/team";
+import { Box, Typography } from "@mui/material";
 import { useState } from "react";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ColorModeContext, useMode } from "./theme";
 import { Routes, Route } from "react-router-dom";
-// import Topbar from "./scenes/global/Topbar";
 import Dashboard from "./scenes/dashboard";
-// import Contacts from "./scenes/contacts";
-// import Sidebar from "./scenes/global/Sidebar";
-// import Invoices from "./scenes/invoices";
-// import Form from "./scenes/form";
-// // import Calendar from "./scenes/calendar";
-// import FAQ from "./scenes/faq";
-// import Bar from "./scenes/bar";
-// import Pie from "./scenes/Pie";
-// import Line from "./scenes/line";
-// import Geography from "./scenes/geography";
-// import Main from "./scenes/main";
+import Sidebar from "./scenes/global/Sidebar";
+
+import Upload from "./scenes/upload";
+import NB15DNNDashboard from "./scenes/nb15dnn";
+import IOT23FGSMDashboard from "./scenes/iot23FGSM";
+import IOT23DNNDashboard from "./scenes/iot23dnn";
 
 
 
@@ -31,11 +24,16 @@ function App() {
         <CssBaseline />
         <div className="app">
           {/*<Topbar setIsSidebar={setIsSidebar} />*/}
-          <main className="content" style={{ display: "flex" }}>
-            {/*{isSidebar && <Sidebar isSidebar={isSidebar} />}*/}
+          <main className="content" style={{ display: "flex", minHeight: '100vh' }}>
+            {isSidebar && <Sidebar isSidebar={isSidebar} />}
             <Box flexGrow={1}>
               <Routes>
-                <Route path="/" element={<Dashboard />} />
+                <Route path="/" element={<Typography
+                  as={'h1'}
+                  fontSize={'50px'}
+                  padding={'50px'}
+                >HelloWorld('print') HelloWorld('print') HelloWorld('print')</Typography>}/>
+                <Route path="/upload" element={<Upload />} />
                 {/*<Route path="/team" element={<Team />} />*/}
                 {/*<Route path="/contacts" element={<Contacts />} />*/}
                 {/*<Route path="/invoices" element={<Invoices />} />*/}
@@ -44,8 +42,10 @@ function App() {
                 {/*<Route path="/faq" element={<FAQ />} />*/}
                 {/*<Route path="/bar" element={<Bar />} />*/}
                 {/*<Route path="pie" element={<Pie />} />*/}
-                {/*<Route path="/line" element={<Line />} />*/}
-                {/*<Route path="/geography" element={<Geography />} />*/}
+                <Route path="/你媽" element={<Dashboard />} />
+                <Route path="/NB15DNN2" element={<NB15DNNDashboard />} />
+                <Route path="/IOT23DNN2" element={<IOT23DNNDashboard />} />
+                <Route path="/IOT23FGSM" element={<IOT23FGSMDashboard />} />
               </Routes>
             </Box>
           </main>
