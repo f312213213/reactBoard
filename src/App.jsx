@@ -9,7 +9,7 @@ import Sidebar from "./scenes/global/Sidebar";
 
 import Upload from "./scenes/upload";
 import NB15DNNDashboard from "./scenes/nb15dnn";
-import IOT23FGSMDashboard from "./scenes/iot23FGSM";
+import IOT23FGSMDashboard from "./scenes/iot23fgsm";
 import IOT23DNNDashboard from "./scenes/iot23dnn";
 
 
