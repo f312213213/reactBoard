@@ -14,7 +14,7 @@ const cate = [
   // '你媽',
   'NB15 DNN 2分類',
   'IOT23 DNN 2分類',
-  'IOT23 FGSM'
+  'IOT23 EPS 擾動'
 ]
 
 

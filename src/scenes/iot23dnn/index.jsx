@@ -4,6 +4,7 @@ import { tokens } from "../../theme";
 import Header from "../../components/Header";
 import BarChart from "../../components/BarChart";
 import MainChart from "../../components/MainChart";
+import StatBox from "../../components/StatBox";
 
 
 const IOT23DNNDashboard = () => {
@@ -721,7 +722,50 @@ const IOT23DNNDashboard = () => {
           <Header title="IOT23 DNN 2分類" subtitle="NTPUNSL" />
         </Box>
 
+
+        <Typography variant="h3">
+          測試資料準確度
+        </Typography>
+        <Box
+            display="grid"
+            gridTemplateColumns="repeat(12, 1fr)"
+            gridAutoRows="140px"
+            gap="20px"
+            mb={'40px'}
+        >
+          <Box
+              gridColumn="span 3"
+              backgroundColor={colors.primary[400]}
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+          >
+            <StatBox
+                title="0.899315"
+                subtitle="原始準確度"
+                progress="0.899315"
+            />
+          </Box>
+          <Box
+              gridColumn="span 3"
+              backgroundColor={colors.primary[400]}
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+          >
+            <StatBox
+                title="0.999979"
+                subtitle="ACT 準確度"
+                progress="0.999979"
+            />
+          </Box>
+        </Box>
+
         {/* GRID & CHARTS */}
+
+        <Typography variant="h3">
+          訓練資料紀錄 - 準確度
+        </Typography>
         <Box
             display="grid"
             gridTemplateColumns="repeat(12, 1fr)"
@@ -905,7 +949,9 @@ const IOT23DNNDashboard = () => {
             </Box>
           </Box>
         </Box>
-
+        <Typography variant="h3">
+          訓練資料紀錄 - Loss
+        </Typography>
         <Box
             display="grid"
             gridTemplateColumns="repeat(12, 1fr)"

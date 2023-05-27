@@ -11,6 +11,7 @@ import Upload from "./scenes/upload";
 import NB15DNNDashboard from "./scenes/nb15dnn";
 import IOT23FGSMDashboard from "./scenes/iot23fgsm";
 import IOT23DNNDashboard from "./scenes/iot23dnn";
+import Home from "./scenes/home";
 
 
 
@@ -28,11 +29,7 @@ function App() {
             {isSidebar && <Sidebar isSidebar={isSidebar} />}
             <Box flexGrow={1}>
               <Routes>
-                <Route path="/" element={<Typography
-                  as={'h1'}
-                  fontSize={'50px'}
-                  padding={'50px'}
-                >HelloWorld('print') HelloWorld('print') HelloWorld('print')</Typography>}/>
+                <Route path="/" element={<Home />}/>
                 <Route path="/upload" element={<Upload />} />
                 {/*<Route path="/team" element={<Team />} />*/}
                 {/*<Route path="/contacts" element={<Contacts />} />*/}
@@ -42,10 +39,9 @@ function App() {
                 {/*<Route path="/faq" element={<FAQ />} />*/}
                 {/*<Route path="/bar" element={<Bar />} />*/}
                 {/*<Route path="pie" element={<Pie />} />*/}
-                <Route path="/你媽" element={<Dashboard />} />
                 <Route path="/NB15DNN2" element={<NB15DNNDashboard />} />
                 <Route path="/IOT23DNN2" element={<IOT23DNNDashboard />} />
-                <Route path="/IOT23FGSM" element={<IOT23FGSMDashboard />} />
+                <Route path="/IOT23EPS" element={<IOT23FGSMDashboard />} />
               </Routes>
             </Box>
           </main>

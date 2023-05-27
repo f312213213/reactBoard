@@ -4,6 +4,7 @@ import { tokens } from "../../theme";
 import Header from "../../components/Header";
 import BarChart from "../../components/BarChart";
 import MainChart from "../../components/MainChart";
+import StatBox from "../../components/StatBox";
 
 const IOT23FGSMDashboard = () => {
   const theme = useTheme();
@@ -118,6 +119,46 @@ const IOT23FGSMDashboard = () => {
       {/* HEADER */}
       <Box display="flex" justifyContent="space-between" alignItems="center">
         <Header title="IOT23 EPS 擾動" subtitle="NTPUNSL" />
+      </Box>
+
+
+
+      <Typography variant="h3">
+        準確度
+      </Typography>
+      <Box
+          display="grid"
+          gridTemplateColumns="repeat(12, 1fr)"
+          gridAutoRows="140px"
+          gap="20px"
+          mb={'40px'}
+      >
+        <Box
+            gridColumn="span 3"
+            backgroundColor={colors.primary[400]}
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+        >
+          <StatBox
+              title="0.90002"
+              subtitle="原始準確度"
+              progress="0.90002"
+          />
+        </Box>
+        <Box
+            gridColumn="span 3"
+            backgroundColor={colors.primary[400]}
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+        >
+          <StatBox
+              title="0.9999"
+              subtitle="ACT 準確度"
+              progress="0.9999"
+          />
+        </Box>
       </Box>
 
       {/* GRID & CHARTS */}
