@@ -114,6 +114,111 @@ const IOT23FGSMDashboard = () => {
     { eps: '0.100', acc: 0.12463, accCT: 0.000611 }
   ]
 
+  const data100 = [
+    { eps: '0.000', acc: 0.909552, accCT: 0.999981 },
+    { eps: '0.001', acc: 0.894488, accCT: 0.999977 },
+    { eps: '0.002', acc: 0.847674, accCT: 0.999977 },
+    { eps: '0.003', acc: 0.781534, accCT: 0.999977 },
+    { eps: '0.004', acc: 0.761625, accCT: 0.999975 },
+    { eps: '0.005', acc: 0.750508, accCT: 0.999973 },
+    { eps: '0.006', acc: 0.7284, accCT: 0.999971 },
+    { eps: '0.007', acc: 0.715375, accCT: 0.999967 },
+    { eps: '0.008', acc: 0.706159, accCT: 0.999941 },
+    { eps: '0.009', acc: 0.679397, accCT: 0.999901 },
+    { eps: '0.010', acc: 0.642498, accCT: 0.999872 },
+    { eps: '0.011', acc: 0.632889, accCT: 0.999856 },
+    { eps: '0.012', acc: 0.611029, accCT: 0.999851 },
+    { eps: '0.013', acc: 0.584501, accCT: 0.999681 },
+    { eps: '0.014', acc: 0.571595, accCT: 0.999561 },
+    { eps: '0.015', acc: 0.559537, accCT: 0.999537 },
+    { eps: '0.016', acc: 0.550402, accCT: 0.998922 },
+    { eps: '0.017', acc: 0.537808, accCT: 0.998642 },
+    { eps: '0.018', acc: 0.522837, accCT: 0.997516 },
+    { eps: '0.019', acc: 0.491033, accCT: 0.907781 },
+    { eps: '0.020', acc: 0.453825, accCT: 0.906197 },
+    { eps: '0.021', acc: 0.435756, accCT: 0.837278 },
+    { eps: '0.022', acc: 0.409504, accCT: 0.823373 },
+    { eps: '0.023', acc: 0.376889, accCT: 0.645166 },
+    { eps: '0.024', acc: 0.371436, accCT: 0.630094 },
+    { eps: '0.025', acc: 0.360119, accCT: 0.620754 },
+    { eps: '0.026', acc: 0.358516, accCT: 0.578555 },
+    { eps: '0.027', acc: 0.358163, accCT: 0.553184 },
+    { eps: '0.028', acc: 0.355183, accCT: 0.549237 },
+    { eps: '0.029', acc: 0.309384, accCT: 0.528571 },
+    { eps: '0.030', acc: 0.309389, accCT: 0.527114 },
+    { eps: '0.031', acc: 0.307301, accCT: 0.526727 },
+    { eps: '0.032', acc: 0.302565, accCT: 0.526482 },
+    { eps: '0.033', acc: 0.292824, accCT: 0.525989 },
+    { eps: '0.034', acc: 0.288391, accCT: 0.52338 },
+    { eps: '0.035', acc: 0.281083, accCT: 0.511182 },
+    { eps: '0.036', acc: 0.273859, accCT: 0.498577 },
+    { eps: '0.037', acc: 0.267078, accCT: 0.492943 },
+    { eps: '0.038', acc: 0.262077, accCT: 0.490844 },
+    { eps: '0.039', acc: 0.254434, accCT: 0.473414 },
+    { eps: '0.040', acc: 0.244127, accCT: 0.471183 },
+    { eps: '0.041', acc: 0.237891, accCT: 0.47021 },
+    { eps: '0.042', acc: 0.230354, accCT: 0.4476 },
+    { eps: '0.043', acc: 0.222678, accCT: 0.439797 },
+    { eps: '0.044', acc: 0.202791, accCT: 0.438886 },
+    { eps: '0.045', acc: 0.194498, accCT: 0.436388 },
+    { eps: '0.046', acc: 0.187003, accCT: 0.424469 },
+    { eps: '0.047', acc: 0.178508, accCT: 0.422017 },
+    { eps: '0.048', acc: 0.170655, accCT: 0.372914 },
+    { eps: '0.049', acc: 0.163661, accCT: 0.371715 },
+    { eps: '0.050', acc: 0.159614, accCT: 0.36928 },
+    { eps: '0.051', acc: 0.155722, accCT: 0.366772 },
+    { eps: '0.052', acc: 0.15157, accCT: 0.363034 },
+    { eps: '0.053', acc: 0.148399, accCT: 0.36296 },
+    { eps: '0.054', acc: 0.145532, accCT: 0.362895 },
+    { eps: '0.055', acc: 0.142929, accCT: 0.362872 },
+    { eps: '0.056', acc: 0.140207, accCT: 0.362859 },
+    { eps: '0.057', acc: 0.137223, accCT: 0.362783 },
+    { eps: '0.058', acc: 0.134161, accCT: 0.348684 },
+    { eps: '0.059', acc: 0.131448, accCT: 0.314491 },
+    { eps: '0.060', acc: 0.129927, accCT: 0.313348 },
+    { eps: '0.061', acc: 0.129205, accCT: 0.310722 },
+    { eps: '0.062', acc: 0.128551, accCT: 0.303081 },
+    { eps: '0.063', acc: 0.127564, accCT: 0.295153 },
+    { eps: '0.064', acc: 0.12603, accCT: 0.294035 },
+    { eps: '0.065', acc: 0.125734, accCT: 0.293556 },
+    { eps: '0.066', acc: 0.125917, accCT: 0.292836 },
+    { eps: '0.067', acc: 0.125613, accCT: 0.288247 },
+    { eps: '0.068', acc: 0.125313, accCT: 0.284176 },
+    { eps: '0.069', acc: 0.125064, accCT: 0.269953 },
+    { eps: '0.070', acc: 0.125196, accCT: 0.24843 },
+    { eps: '0.071', acc: 0.12575, accCT: 0.231572 },
+    { eps: '0.072', acc: 0.126868, accCT: 0.225589 },
+    { eps: '0.073', acc: 0.128355, accCT: 0.182574 },
+    { eps: '0.074', acc: 0.12989, accCT: 0.179969 },
+    { eps: '0.075', acc: 0.131221, accCT: 0.178627 },
+    { eps: '0.076', acc: 0.132963, accCT: 0.175801 },
+    { eps: '0.077', acc: 0.134487, accCT: 0.174247 },
+    { eps: '0.078', acc: 0.136725, accCT: 0.173479 },
+    { eps: '0.079', acc: 0.139293, accCT: 0.172597 },
+    { eps: '0.080', acc: 0.14206, accCT: 0.171933 },
+    { eps: '0.081', acc: 0.144526, accCT: 0.170846 },
+    { eps: '0.082', acc: 0.147204, accCT: 0.169134 },
+    { eps: '0.083', acc: 0.150121, accCT: 0.167926 },
+    { eps: '0.084', acc: 0.153188, accCT: 0.167126 },
+    { eps: '0.085', acc: 0.156102, accCT: 0.166278 },
+    { eps: '0.086', acc: 0.158767, accCT: 0.165688 },
+    { eps: '0.087', acc: 0.16099, accCT: 0.165355 },
+    { eps: '0.088', acc: 0.163237, accCT: 0.162057 },
+    { eps: '0.089', acc: 0.165258, accCT: 0.161887 },
+    { eps: '0.090', acc: 0.167115, accCT: 0.161831 },
+    { eps: '0.091', acc: 0.169015, accCT: 0.161745 },
+    { eps: '0.092', acc: 0.170964, accCT: 0.161722 },
+    { eps: '0.093', acc: 0.17293, accCT: 0.161664 },
+    { eps: '0.094', acc: 0.174979, accCT: 0.161239 },
+    { eps: '0.095', acc: 0.177333, accCT: 0.159724 },
+    { eps: '0.096', acc: 0.17986, accCT: 0.15874 },
+    { eps: '0.097', acc: 0.182561, accCT: 0.156709 },
+    { eps: '0.098', acc: 0.185452, accCT: 0.15484 },
+    { eps: '0.099', acc: 0.18833, accCT: 0.153288 },
+    { eps: '0.100', acc: 0.190463, accCT: 0.152448 }
+  ]
+
+
   return (
     <Box m="20px">
       {/* HEADER */}
@@ -162,11 +267,15 @@ const IOT23FGSMDashboard = () => {
       </Box>
 
       {/* GRID & CHARTS */}
+      <Typography variant="h3">
+        1 Epoch
+      </Typography>
       <Box
         display="grid"
         gridTemplateColumns="repeat(12, 1fr)"
         gridAutoRows="140px"
         gap="20px"
+        mb={'40px'}
       >
         <Box
           gridColumn="span 8"
@@ -343,6 +452,194 @@ const IOT23FGSMDashboard = () => {
           </Typography>
           <Box height="240px">
             <MainChart isDashboard={true} data={data} dataKey={'eps'} bar1={'acc'}  />
+          </Box>
+        </Box>
+      </Box>
+
+      <Typography variant="h3">
+        100 Epoch
+      </Typography>
+      <Box
+          display="grid"
+          gridTemplateColumns="repeat(12, 1fr)"
+          gridAutoRows="140px"
+          gap="20px"
+      >
+        <Box
+            gridColumn="span 8"
+            gridRow="span 2"
+            backgroundColor={colors.primary[400]}
+        >
+          <Box
+              mt="25px"
+              p="0 30px"
+              display="flex "
+              justifyContent="space-between"
+              alignItems="center"
+          >
+            <Box>
+              <Typography
+                  variant="h5"
+                  fontWeight="600"
+                  color={colors.grey[100]}
+              >
+                在相同 EPS 值下，是否有 ACT 值對準確度的影響
+              </Typography>
+            </Box>
+            {/*<Box>*/}
+            {/*  <IconButton>*/}
+            {/*    <DownloadOutlinedIcon*/}
+            {/*      sx={{ fontSize: "26px", color: colors.greenAccent[500] }}*/}
+            {/*    />*/}
+            {/*  </IconButton>*/}
+            {/*</Box>*/}
+          </Box>
+          <Box height="230px" m="-20px 0 0 0">
+            <BarChart isDashboard={true} data={data100} dataKey={'eps'} bar2={'acc'} bar1={'accCT'} />
+          </Box>
+        </Box>
+        <Box
+            gridColumn="span 4"
+            gridRow="span 2"
+            backgroundColor={colors.primary[400]}
+            overflow="auto"
+        >
+          <Box
+              display="flex"
+              justifyContent="space-between"
+              alignItems="center"
+              borderBottom={`4px solid ${colors.primary[500]}`}
+              colors={colors.grey[100]}
+              p="15px"
+          >
+            <Typography color={colors.grey[100]} variant="h5" fontWeight="600">
+              每筆資料之細節
+            </Typography>
+          </Box>
+          <Box
+              display="flex"
+              justifyContent="space-between"
+              alignItems="center"
+              borderBottom={`4px solid ${colors.primary[500]}`}
+              p="15px"
+          >
+
+            <Box
+                color={colors.greenAccent[500]}
+                p="5px 10px"
+                borderRadius="4px"
+            >
+              EPS 值
+            </Box>
+            <Box>
+              <Typography
+                  color={colors.greenAccent[500]}
+                  p="5px 10px"
+                  borderRadius="4px"
+              >
+                準確度
+              </Typography>
+            </Box>
+            <Box>
+              <Typography
+                  color={colors.greenAccent[500]}
+                  p="5px 10px"
+                  borderRadius="4px"
+              >
+                準確度（有 ACT 值）
+              </Typography>
+            </Box>
+          </Box>
+          {data.map(({eps, acc, accCT}) => (
+              <Box
+                  key={eps}
+                  display="flex"
+                  justifyContent="space-between"
+                  alignItems="center"
+                  borderBottom={`4px solid ${colors.primary[500]}`}
+                  p="15px"
+              >
+
+                <Box
+                    backgroundColor={colors.greenAccent[500]}
+                    p="5px 10px"
+                    borderRadius="4px"
+                >
+                  {eps}
+                </Box>
+                <Box>
+                  <Typography
+                      color={colors.greenAccent[500]}
+                      variant="h5"
+                      fontWeight="600"
+                  >
+                    {acc}
+                  </Typography>
+                </Box>
+                <Box>
+                  <Typography
+                      color={colors.greenAccent[500]}
+                      variant="h5"
+                      fontWeight="600"
+                  >
+                    {accCT}
+                  </Typography>
+                </Box>
+              </Box>
+          ))}
+        </Box>
+
+        <Box
+            gridColumn="span 4"
+            gridRow="span 2"
+            backgroundColor={colors.primary[400]}
+            padding="30px"
+        >
+          <Typography
+              variant="h5"
+              fontWeight="600"
+              sx={{ marginBottom: "15px" }}
+          >
+            在相同 EPS 值下，是否有 ACT 值對準確度的影響
+          </Typography>
+          <Box height="240px">
+            <MainChart isDashboard={true} data={data} dataKey={'eps'} bar1={'acc'} bar2={'accCT'} />
+          </Box>
+        </Box>
+
+        <Box
+            gridColumn="span 4"
+            gridRow="span 2"
+            backgroundColor={colors.primary[400]}
+            padding="30px"
+        >
+          <Typography
+              variant="h5"
+              fontWeight="600"
+              sx={{ marginBottom: "15px" }}
+          >
+            EPS 值變化時，準確度的變化紀錄（有 ACT）
+          </Typography>
+          <Box height="240px">
+            <MainChart isDashboard={true} data={data} dataKey={'eps'} bar2={'accCT'} />
+          </Box>
+        </Box>
+
+        <Box
+            gridColumn="span 4"
+            gridRow="span 2"
+            backgroundColor={colors.primary[400]}
+            padding="30px"
+        >
+          <Typography
+              variant="h5"
+              fontWeight="600"
+              sx={{ marginBottom: "15px" }}
+          >
+            EPS 值變化時，準確度的變化紀錄（無 ACT）
+          </Typography>
+          <Box height="240px">
+            <MainChart isDashboard={true} data={data100} dataKey={'eps'} bar1={'acc'}  />
           </Box>
         </Box>
       </Box>

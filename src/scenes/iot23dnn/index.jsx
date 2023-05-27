@@ -957,6 +957,7 @@ const IOT23DNNDashboard = () => {
             gridTemplateColumns="repeat(12, 1fr)"
             gridAutoRows="140px"
             gap="20px"
+            mb={'40px'}
         >
           <Box
               gridColumn="span 8"
@@ -1135,6 +1136,7 @@ const IOT23DNNDashboard = () => {
             </Box>
           </Box>
         </Box>
+
       </Box>
   );
 };
