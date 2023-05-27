@@ -117,7 +117,7 @@ const IOT23FGSMDashboard = () => {
     <Box m="20px">
       {/* HEADER */}
       <Box display="flex" justifyContent="space-between" alignItems="center">
-        <Header title="IOT23 FGSM" subtitle="NTPUNSL" />
+        <Header title="IOT23 EPS 擾動" subtitle="NTPUNSL" />
       </Box>
 
       {/* GRID & CHARTS */}
@@ -157,7 +157,7 @@ const IOT23FGSMDashboard = () => {
             {/*</Box>*/}
           </Box>
           <Box height="230px" m="-20px 0 0 0">
-            <BarChart isDashboard={true} data={data} dataKey={'eps'} bar1={'acc'} bar2={'accCT'} />
+            <BarChart isDashboard={true} data={data} dataKey={'eps'} bar2={'acc'} bar1={'accCT'} />
           </Box>
         </Box>
         <Box

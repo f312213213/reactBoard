@@ -759,7 +759,7 @@ const IOT23DNNDashboard = () => {
               {/*</Box>*/}
             </Box>
             <Box height="230px" m="-20px 0 0 0">
-              <BarChart isDashboard={true} data={data} dataKey={'epoch'} bar1={'acc'} bar2={'accCT'} />
+              <BarChart isDashboard={true} data={data} dataKey={'epoch'} bar2={'acc'} bar1={'accCT'} />
             </Box>
           </Box>
           <Box
@@ -884,7 +884,7 @@ const IOT23DNNDashboard = () => {
               Epoch 值變化時，準確度的變化紀錄（無 ACT）
             </Typography>
             <Box height="240px">
-              <MainChart isDashboard={true} data={data} dataKey={'epoch'} bar2={'acc'} />
+              <MainChart isDashboard={true} data={data} dataKey={'epoch'} bar1={'acc'} />
             </Box>
           </Box>
           <Box
@@ -901,7 +901,7 @@ const IOT23DNNDashboard = () => {
               Epoch 值變化時，準確度的變化紀錄（有 ACT）
             </Typography>
             <Box height="240px">
-              <MainChart isDashboard={true} data={data} dataKey={'epoch'} bar1={'accCT'} />
+              <MainChart isDashboard={true} data={data} dataKey={'epoch'} bar2={'accCT'} />
             </Box>
           </Box>
         </Box>
@@ -942,7 +942,7 @@ const IOT23DNNDashboard = () => {
               {/*</Box>*/}
             </Box>
             <Box height="230px" m="-20px 0 0 0">
-              <BarChart isDashboard={true} data={data} dataKey={'epoch'} bar1={'loss'} bar2={'lossCT'} />
+              <BarChart isDashboard={true} data={data} dataKey={'epoch'} bar2={'loss'} bar1={'lossCT'} />
             </Box>
           </Box>
           <Box
@@ -1068,7 +1068,7 @@ const IOT23DNNDashboard = () => {
               Epoch 值變化時，Loss 的變化紀錄（無 ACT）
             </Typography>
             <Box height="240px">
-              <MainChart isDashboard={true} data={data} dataKey={'epoch'} bar2={'loss'} />
+              <MainChart isDashboard={true} data={data} dataKey={'epoch'} bar1={'loss'} />
             </Box>
           </Box>
           <Box
@@ -1085,7 +1085,7 @@ const IOT23DNNDashboard = () => {
               Epoch 值變化時，Loss 的變化紀錄（有 ACT）
             </Typography>
             <Box height="240px">
-              <MainChart isDashboard={true} data={data} dataKey={'epoch'} bar1={'lossCT'} />
+              <MainChart isDashboard={true} data={data} dataKey={'epoch'} bar2={'lossCT'} />
             </Box>
           </Box>
         </Box>

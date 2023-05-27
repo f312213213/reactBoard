@@ -93,15 +93,24 @@ const Sidebar = () => {
           {!isCollapsed && (
             <Box mb="25px">
               <Box display="flex" justifyContent="center" alignItems="center">
-                <a download href={`../../assets/logo.png`}>
-                  <img
-                      alt="profile-user"
-                      width="100px"
-                      height="100px"
-                      src={`../../assets/logo.png`}
-                      style={{ cursor: "pointer", borderRadius: "50%" }}
-                  />
-                </a>
+                <img
+                    alt="profile-user"
+                    width="100px"
+                    height="100px"
+                    src={`../../assets/logo.png`}
+                    style={{ cursor: "pointer", borderRadius: "50%" }}
+                    onClick={() => {
+                      function download(url) {
+                        const a = document.createElement('a')
+                        a.href = url
+                        a.download = url.split('/').pop()
+                        document.body.appendChild(a)
+                        a.click()
+                        document.body.removeChild(a)
+                      }
+                      download('../../assets/logo.png')
+                    }}
+                />
               </Box>
               <Box textAlign="center">
                 <Typography
