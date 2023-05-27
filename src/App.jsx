@@ -27,7 +27,7 @@ function App() {
           {/*<Topbar setIsSidebar={setIsSidebar} />*/}
           <main className="content" style={{ display: "flex", minHeight: '100vh' }}>
             {isSidebar && <Sidebar isSidebar={isSidebar} />}
-            <Box flexGrow={1}>
+            <Box flexGrow={1} position={'relative'}>
               <Routes>
                 <Route path="/" element={<Home />}/>
                 <Route path="/upload" element={<Upload />} />
