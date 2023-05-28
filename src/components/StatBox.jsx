@@ -17,7 +17,7 @@ const StatBox = ({ title, subtitle, icon, progress, increase }) => {
             fontWeight="bold"
             sx={{ color: colors.grey[100] }}
           >
-            {title}
+            {title.split('.')[1].substring(0, 2) + '.' +title.split('.')[1].substring(2)}%
           </Typography>
         </Box>
         <Box>
