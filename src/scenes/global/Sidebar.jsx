@@ -161,6 +161,7 @@ const Sidebar = () => {
             </Typography>
             {
               cate.map((c) => {
+                if (c.includes('擾動')) return null
                 return (
                     <Item
                         title={c}
