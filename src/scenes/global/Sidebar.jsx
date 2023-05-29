@@ -157,7 +157,7 @@ const Sidebar = () => {
               color={colors.grey[300]}
               sx={{ m: "15px 0 5px 20px" }}
             >
-              Category
+              準確度
             </Typography>
             {
               cate.map((c) => {
@@ -172,6 +172,21 @@ const Sidebar = () => {
                 )
               })
             }
+
+            <Typography
+                variant="h6"
+                color={colors.grey[300]}
+                sx={{ m: "15px 0 5px 20px" }}
+            >
+              抗攻擊能力
+            </Typography>
+            <Item
+                title={cate[2]}
+                to={'/' + cate[2].replace(/[^a-z0-9]/gi, '')}
+                icon={<ClassIcon />}
+                selected={selected}
+                setSelected={setSelected}
+            />
           </Box>
         </Menu>
       </ProSidebar>
