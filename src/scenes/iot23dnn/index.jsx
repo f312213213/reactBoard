@@ -791,7 +791,7 @@ const IOT23DNNDashboard = () => {
                     fontWeight="600"
                     color={colors.grey[100]}
                 >
-                  在相同 Epoch 值下，是否有 ACT 值對準確度的影響
+                  在相同 Epoch 下，是否有 ACT 值對準確度的影響
                 </Typography>
               </Box>
               {/*<Box>*/}
@@ -837,7 +837,7 @@ const IOT23DNNDashboard = () => {
                   p="5px 10px"
                   borderRadius="4px"
               >
-                Epoch 值
+                Epoch
               </Box>
               <Box>
                 <Typography
@@ -908,7 +908,7 @@ const IOT23DNNDashboard = () => {
                 fontWeight="600"
                 sx={{ marginBottom: "15px" }}
             >
-              在相同 Epoch 值下，是否有 ACT 值對準確度的影響
+              在相同 Epoch 下，是否有 ACT 值對準確度的影響
             </Typography>
             <Box height="240px">
               <MainChart isDashboard={true} data={data} dataKey={'epoch'} bar1={'acc'} bar2={'accCT'} />
@@ -925,7 +925,7 @@ const IOT23DNNDashboard = () => {
                 fontWeight="600"
                 sx={{ marginBottom: "15px" }}
             >
-              Epoch 值變化時，準確度的變化紀錄（無 ACT）
+              Epoch 變化時，準確度的變化紀錄（無 ACT）
             </Typography>
             <Box height="240px">
               <MainChart isDashboard={true} data={data} dataKey={'epoch'} bar1={'acc'} />
@@ -942,7 +942,7 @@ const IOT23DNNDashboard = () => {
                 fontWeight="600"
                 sx={{ marginBottom: "15px" }}
             >
-              Epoch 值變化時，準確度的變化紀錄（有 ACT）
+              Epoch 變化時，準確度的變化紀錄（有 ACT）
             </Typography>
             <Box height="240px">
               <MainChart isDashboard={true} data={data} dataKey={'epoch'} bar2={'accCT'} />
@@ -978,7 +978,7 @@ const IOT23DNNDashboard = () => {
                     fontWeight="600"
                     color={colors.grey[100]}
                 >
-                  在相同 Epoch 值下，是否有 ACT 值對 Loss的影響
+                  在相同 Epoch 下，是否有 ACT 值對 Loss的影響
                 </Typography>
               </Box>
               {/*<Box>*/}
@@ -1024,7 +1024,7 @@ const IOT23DNNDashboard = () => {
                   p="5px 10px"
                   borderRadius="4px"
               >
-                Epoch 值
+                Epoch
               </Box>
               <Box>
                 <Typography
@@ -1095,7 +1095,7 @@ const IOT23DNNDashboard = () => {
                 fontWeight="600"
                 sx={{ marginBottom: "15px" }}
             >
-              在相同 Epoch 值下，是否有 ACT 值對 Loss 的影響
+              在相同 Epoch 下，是否有 ACT 值對 Loss 的影響
             </Typography>
             <Box height="240px">
               <MainChart isDashboard={true} data={data} dataKey={'epoch'} bar1={'loss'} bar2={'lossCT'} />
@@ -1114,7 +1114,7 @@ const IOT23DNNDashboard = () => {
                 fontWeight="600"
                 sx={{ marginBottom: "15px" }}
             >
-              Epoch 值變化時，Loss 的變化紀錄（無 ACT）
+              Epoch 變化時，Loss 的變化紀錄（無 ACT）
             </Typography>
             <Box height="240px">
               <MainChart isDashboard={true} data={data} dataKey={'epoch'} bar1={'loss'} />
@@ -1132,7 +1132,7 @@ const IOT23DNNDashboard = () => {
                 fontWeight="600"
                 sx={{ marginBottom: "15px" }}
             >
-              Epoch 值變化時，Loss 的變化紀錄（有 ACT）
+              Epoch 變化時，Loss 的變化紀錄（有 ACT）
             </Typography>
             <Box height="240px">
               <MainChart isDashboard={true} data={data} dataKey={'epoch'} bar2={'lossCT'} />
