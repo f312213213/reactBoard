@@ -17,7 +17,7 @@ const Home = () => {
       <Box m="20px">
         {/* HEADER */}
         <Box display="flex" justifyContent="space-between" alignItems="center">
-          <Header title="深度學習模型新式攻防研究" subtitle="NTPUNSL" />
+          <Header title="Data Tendency Extraction and Adversarial Attack Resistance for Deep Learning Intrusion Detection Model based on Accurate Class Tendency" subtitle="NTPUNSL" />
         </Box>
 
 
